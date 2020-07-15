@@ -1,0 +1,131 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.div_foto_muro{
+ 	text-align: center;
+ 	transition: transform .2s;
+ }
+
+.foto_muro{
+
+	height:120px !important;	
+}
+
+
+.foto_muro:hover{
+
+    -ms-transform: scale(1.6); /* IE 9 */
+  -webkit-transform: scale(1.6); /* Safari 3-8 */
+  transform: scale(1.6); 
+}
+
+
+
+./*desc_foto_muro{
+	height:30% !important;
+	font-size: 1px;	
+}*/
+
+table{
+	background: inherit !important;
+}
+
+tr td{
+	
+	width: 150px !important;
+
+
+}
+
+
+.backDoor
+			{
+			  background-color: #333;
+			  border-top-left-radius: 8px;
+			  border-top-right-radius: 8px;
+			  position:relative;
+			  width:250px;
+			  height:500px;
+			  margin: 30px auto;
+			  
+			 
+			}
+
+			.door
+			{
+			  
+			  background-size: 100% 100%;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  position:absolute;
+			  top:0px;
+			  left:0px;
+			  width:300px;
+			  height:600px;
+			  margin-bottom: 0px;
+			 
+			  transform-origin: left;
+			  /*Speed of the Door animation*/
+			  transition: all 0.5s ease-in-out;
+			}
+
+			.doorOpen
+			{
+			  /*prespectiv creates the door open effect*/
+			  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+			}
+
+			.enter {
+				color: red;
+				position: relative;
+				margin-top: 50px;
+			}
+
+			#door1{
+	background-image: url(../img_rooms/door_ok.jpg);
+	background-size: 630px 600px;
+	
+	
+}
+
+#door2{
+	background-image: url(../img_rooms/door_ok.jpg);
+	background-size: 630px 600px;
+	
+
+}
+
+			
+.label {
+	font-size: 30px; 
+	padding-bottom: 50px;
+	font-style: italic;
+	border: solid 3px gold;
+	border-radius: 3px;
+	padding: 5px;
+	background: rgba(247, 244, 45, 0.7);
+	box-shadow: 2px 3px #888888;
+
+
+}
+
+h3{
+	padding-top: 50%;
+	 
+}
+
+	.label {
+	font-size: 30px; 
+	padding-bottom: 50px;
+	font-style: italic;
+	border: solid 3px gold;
+	border-radius: 3px;
+	padding: 5px;
+	background: rgba(247, 244, 45, 0.7);
+	box-shadow: 2px 3px #888888;
+
+
+}
+
+
