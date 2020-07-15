@@ -4,12 +4,44 @@ body{
 
 .div_foto_muro{
  	text-align: center;
+	transition: transform .2s;
  }
 
 .foto_muro{
 
 	height:120px !important;	
 }
+
+.foto_muro:hover{
+
+    -ms-transform: scale(1.6); /* IE 9 */
+  -webkit-transform: scale(1.6); /* Safari 3-8 */
+  transform: scale(1.6); 
+}
+
+/*---------------------------------------------------------------*/
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 15px 50px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*---------------------------------------------------------------fine----------------------------------*/
 
 
 
