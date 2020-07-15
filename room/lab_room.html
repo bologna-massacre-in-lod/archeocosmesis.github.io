@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First room museum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="Formir is open-source, pure CSS Framework for responsive web developing. Based on flexbox, complete and modular, fluid design, builded with Less." />
+<meta name="keywords" content="formir, formir framework, css framework, open source css framework, pure css, pure css framework, flexbox framework, no js framework, fluid design, less framework"/>
+<meta name="author" content="Konrad Kubrak" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Formir - open source, pure CSS Framework">
+<meta property="og:description" content="Formir is open-source, pure CSS Framework for responsive web developing. Based on flexbox, complete and modular, fluid design, builded with Less.">
+<meta property="og:image" content="https://formir.io/img/logo/formir.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1713">
+<meta property="og:image:height" content="1713">
+
+<meta name="theme-color" content="#281E2B">
+<meta name="msapplication-navbutton-color" content="#281E2B">
+<meta name="apple-mobile-web-app-status-bar-style" content="#281E2B">
+<!-- <link rel="apple-touch-icon" sizes="57x57" href="/img/favico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/favico/android-icon-192x192.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="/img/favico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favico/favicon-16x16.png"> -->
+<!-- <link rel="manifest" href="/img/favico/manifest.json"> -->
+<meta name="msapplication-TileColor" content="#281E2B">
+<meta name="msapplication-TileImage" content="/img/favico/ms-icon-144x144.png">
+<link rel="stylesheet" type="text/css" href="./css/application.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/formir-room.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/foto_muro.css" />
+<link rel="stylesheet" type="text/css" href="./css/formir-room-black.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/formir-table-fluid.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="./js/include.js"></script>
+
+<style type="text/css">
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+  .div_foto_muro{
+  text-align: center;
+ }
+
+.foto_muro{
+
+  height:120px !important;  
+}
+
+
+
+./*desc_foto_muro{
+  height:30% !important;
+  font-size: 1px; 
+}*/
+
+table{
+  background: inherit !important;
+}
+
+
+
+
+.backDoor
+      {
+        background-color: #333;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        position:relative;
+        width:250px;
+        height:500px;
+        margin: 30px auto;
+        
+       
+      }
+
+      .door
+      {
+        
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:300px;
+        height:600px;
+        margin-bottom: 0px;
+       
+        transform-origin: left;
+        /*Speed of the Door animation*/
+        transition: all 0.5s ease-in-out;
+      }
+
+      .doorOpen
+      {
+        /*prespectiv creates the door open effect*/
+        transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+      }
+
+      .enter {
+        color: red;
+        position: relative;
+        margin-top: 50px;
+      }
+
+      #door1{
+  background-image: url(./img_rooms/door_ok.jpg);
+  background-size: 630px 600px;
+  
+  
+}
+
+#door2{
+  background-image: url(./img_rooms/door_ok.jpg);
+  background-size: 630px 600px;
+  
+
+}
+
+      
+.label {
+  font-size: 30px; 
+  padding-bottom: 50px;
+  font-style: italic;
+  border: solid 3px gold;
+  border-radius: 3px;
+  padding: 5px;
+  background: rgba(247, 244, 45, 0.7);
+  box-shadow: 2px 3px #888888;
+
+
+}
+
+h3{
+  padding-top: 50%;
+  
+}
+
+  .label {
+  font-size: 30px; 
+  padding-bottom: 5px;
+  font-style: italic;
+  border: solid 3px gold;
+  border-radius: 3px;
+  padding: 5px;
+  background-image: linear-gradient(#ffd35c, brown);
+  box-shadow: 2px 3px #888888;
+
+
+}
+
+
+</style>
+  </head>
+
+  <body class="tabs">
+  <!---  <header class="header fixed tab-navs">
+  <div class="header-content">
+    <span>
+      <a href="/" class="logo logo-s display-inline"><img src="https://formir.io/img/logo/formir-64.png"/><span>formir / the room</span></a>
+    </span>
+    <nav>
+      <input id="nav-mobile" type="checkbox" class="mobile-toggle"/>
+      <label for="nav-mobile" class="mobile-toggle-label">
+        <span class="toggle-hide">&#9776;</span>
+        <span class="toggle-show">&times;</span>
+      </label>
+      <ul class="items menu-mobile mobile-toggle-show">
+        <li class="item"><a class="anchor" href="/">&larr; back to Formir</a></li>
+        <li class="item has-popup">
+          <input type="checkbox"/>
+          <a class="anchor">Plugins</a>
+          <ul class="popup bottom menu">
+            <li class="item">
+              <a class="anchor" href="/plugins/room/index.html">Room - 3D Gallery</a>
+            </li>
+            <li class="item">
+              <a class="anchor" href="/plugins/table-fluid/index.html">Table fluid - columns sider</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item divider">
+          <a class="anchor" href="/plugins/room/index.html">The Room</a>
+        </li>
+        <li class="item">
+          <a class="anchor" href="/plugins/room/examples.html">Examples</a>
+        </li>
+        <li class="item">
+          <a class="anchor" href="/plugins/room/docs.html">Documentation</a>
+        </li>
+        <li class="item"><a class="anchor" target="_blank" href="https://codecanyon.net/item/the-room-pure-css-3d-slider/22595934">Buy Room</a></li>
+        <li class="item"><a class="anchor" href="https://github.com/formir/formir/issues/new" target="_blank">Report issue</a></li>
+        <li class="item">
+          <a class="anchor button inverse transparent" href="https://paypal.me/formir" target="_blank">Support author</a>
+        </li>
+      </ul>
+    </nav>
+  </div> 
+</header> ---->
+<div class="welcome" style="height:100vh;">
+  <div class="room" style="height:100%;">
+    <input id="room-zoom" type="checkbox" name="zoom" class="room-zoom"/>
+    <div class="room-body">
+      <input id="wall-1" type="radio" name="animate" checked="true"/>
+      <input id="wall-2" type="radio" name="animate"/>
+      <input id="wall-3" type="radio" name="animate"/>
+      <input id="wall-4" type="radio" name="animate"/>
+      <!-- <input id="wall-5" type="radio" name="animate"/>
+      <input id="wall-6" type="radio" name="animate"/>
+      <input id="wall-7" type="radio" name="animate"/>
+      <input id="wall-8" type="radio" name="animate"/>
+      <input id="wall-9" type="radio" name="animate"/>
+      <input id="wall-10" type="radio" name="animate"/>
+      <input id="wall-11" type="radio" name="animate"/>
+      <input id="wall-12" type="radio" name="animate"/> -->
+      <div class="room-arena" id="container">
+        <div class="walls">
+
+          <div class="wall">
+
+            <div style='margin-bottom: 0' class="item">
+
+             <table width="100%" height="100%">
+                <tr>
+                    <td style='vertical-align: bottom; padding-bottom: 0'>
+                      <a class="item-image">
+                        <div class="div_foto_muro">
+                          <div style='margin-bottom: 0;' class="backDoor">
+                            <a href="./mix_room.html" class="enter"><h3>GO</h3></a>
+                            <div id="door1" class="door" onclick="myRedirectWithDelay('./mix_room.html' )"><h3 style="background-image:linear-gradient(orange, lightblue, red); opacity: 0.7; padding: 3px; ">Visit the previous room</h3></div>
+                          </div>
+                        </div>
+                      </a>
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <!-- <div class="item">
+                <a class="item-image">
+                  <img style="width: 100px; margin-left: 3%;" src="foto-Sara.jpeg" />
+                  <img style="width: 100px; margin-left: 10%;" src="foto-Sara.jpeg" />
+                  <img style="width: 100px; margin-left: 20%;" src="foto-Sara.jpeg" />
+                </a>
+                <p class="item-desc">
+                  You can also come closer using button on hover. This interaction will slightly enlarge the image.
+                </p>
+            </div>
+            <div class="item">
+                <a class="item-image">
+                  <img src="foto_alessia.jpeg" />
+                </a>
+                <p  class="item-desc">
+                  You can setup each of element that you see in this gallery like:  colors of wall, image of floor etc.
+                </p>
+            </div>
+            <div class="item">
+                <a class="item-image">
+                  <img src="./img/rooms/9.jpg" />
+                </a>
+                <p  class="item-desc">
+                    As you see. Each image has own description under image. But you decise to apply it on your HTML.
+                </p>
+            </div> -->
+          </div>
+          <div class="wall">
+            <div class="item">
+               <table width="100%" height="100%">
+                <tr>
+                    <td>
+                      <a class="item-image">
+                        <div class="div_foto_muro">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/9AxHoNCFHXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <p class="desc_foto_muro">Roman Makeup Tutorial | History Inspired | Feat. Amber Butchart and Rebecca Butterworth</p>
+                        </div>
+                      </a>
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                        
+
+              </table>
+                
+            </div>
+          </div>
+          <div class="wall">
+            <div class="item">
+              <table width="100%" height="100%">
+                <tr>
+                    <td>
+                      <a class="item-image">
+                        <div class="div_foto_muro">
+                          <h1>ArcheoCosmesis LOGO</h1>
+                          <p class="desc_foto_muro"></p>
+                        </div>
+                      </a>
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                        
+
+              </table>
+               <!-- <a class="item-image">
+                  <div style="width: 300px; margin-left: 3px; margin-top: 3px;">
+                    <img style=" border: 5px solid black; height: auto;" src="./foto-1-1.jpg" />
+                    <p>Pestle and mortar, Egypt, 1650. Science Museum Group.</p>
+                  </div>
+                </a> -->
+                <!-- <a class="item-image">
+                  <div style="width: 150px; margin-top: 3px;  margin-left: 100px;">
+                  <img style=" border: 5px solid black; height: auto;" src="./foto-2-2.jpg" />
+                  <p>Kohl tube Glass. New Kingdom, 18th Dynasty. Museo egitto.</p>
+                  </div>
+                </a>
+                <a class="item-image">
+                  <div style="width: 400px; margin-left: 3px; margin-top: 3px;">
+                  <img style=" border: 5px solid black; height: auto;" src="./foto-2-3.jpg" />
+                  <p>Kohl tube Glass.<br>New Kingdom, 18th Dynasty.<br> Museo egitto.</p>
+                  </div>
+                </a>
+                <a class="item-image">
+                  <div style="width: 100px; margin-bottom: 600px;  margin-left: 800px;">
+                  <img style=" border: 5px solid black; height: auto;" src="./foto-2-4.jpg" />
+                  <p>Contenitore per il kohl con applicatore Legno, osso. Nuovo Regno, XVIII dinastia, regni di Amenhotep II, Tutmosi IV e Amenhotep III (1425-1353 a.C.).<br> Deir el-Medina, Tomba di Kha (TT 8). Museo egitto.</p>
+                  </div>
+                </a>
+                <a class="item-image">
+                  <div style="width: 100px; margin-bottom: 600px;  margin-left: 800px;">
+                  <img style=" border: 5px solid black; height: auto;" src="./foto_specchio.jpg" />
+                  <p>Specchio con manico a forma di fiore di loto Bronzo, legno. Nuovo Regno, XVIII dinastia (1539-1292 a.C.). Collezione Drovetti (1824). C. 6427. <br> museo egizio.</p>
+                  </div>
+                </a>
+                <a class="item-image">
+                  <div style="width: 100px; margin-bottom: 600px;  margin-left: 800px;">
+                  <img style=" border: 5px solid black; height: auto;" src="./maschera.jpg" />
+                  <p>Maschera funeraria di Merit Lino, stucco, foglia d’oro, vetro. Nuovo Regno, XVIII dinastia, regni di Amenhotep II, Tutmosi IV e Amenhotep III (1425-1353 a.C.). Deir el-Medina, Tomba di Kha (TT 8).</p>
+                  </div>
+                </a> -->
+
+                
+            </div>
+            <!-- <div class="item">
+                <a class="item-image">
+                  <img src="./cofanetto.jpg" />
+                  <p>Cofanetto con raffigurati Kha e Merit nell’atto di ricevere offerte da uno dei loro figli, NekhetefLegno. Nuovo Regno, XVIII dinastia, regni di Amenhotep II, Tutmosi IV e Amenhotep III (1425-1353 a.C.). Deir el-Medina, Tomba di Kha (TT 8).</p>
+                </a>
+                <p  class="item-desc">
+                  The Gallery is fully responsive.
+                </p>
+            </div>
+            <div class="item">
+                <a class="item-image">
+                  <img src="./img/rooms/11.jpg" />
+                </a>
+                <p  class="item-desc">
+                  Visit room <label for="tab-docs" class="link">documentation</label> page and <a href="https://formir.io">formir</a> framework page.
+                </p>
+            </div> -->
+          </div>
+          <div class="wall">
+            <div style='margin-bottom: 0' class="item">
+
+             <table width="100%" height="100%">
+                <tr>
+                    <td style='vertical-align: bottom; padding-bottom: 0'>
+                      <a class="item-image">
+                        <div class="div_foto_muro">
+                          <div  style='margin-bottom: 0;' class="backDoor">
+                            <a href="../The_museum.html" class="enter"><h3>GO</h3></a>
+                            <div id="door2" class="door" onclick="myRedirectWithDelay('../The_museum.html')"><h3 style="background-color:grey; opacity: 0.7; padding: 3px; ">Come to the virtual museum's hall</h3></div>
+                          </div>
+                        </div>
+                      </a>
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <!-- <div class="item">
+                <a class="item-image">
+                  <img src="./img/rooms/2.jpg" />
+                </a>
+                <p  class="item-desc">
+                  Hung on the wall vertically or in this case horizontally.
+                </p>
+            </div>
+            <div class="item">
+                <a class="item-image">
+                  <img src="./img/rooms/8.jpg" />
+                  </a>
+                <p  class="item-desc">
+                  You can also navigate gallery using buttons. Room will spin much faster!
+                </p>
+            </div>
+            <div class="item">
+                <a class="item-image">
+                  <img src="./img/rooms/10.jpg" />
+                </a>
+                <p  class="item-desc">
+                  We would like to thank to author of the photos Kamil Przybyło.
+                </p>
+            </div> -->
+          </div>
+          <div class="ceil"></div>
+          <div class="floor"></div>
+        </div>
+      </div>
+      <div class="navigations">
+        <label for="wall-1">1</label>
+        <label for="wall-2">2</label>
+        <label for="wall-3">3</label>
+        <label for="wall-4">4</label>
+        <!-- <label for="wall-5">5</label>
+        <label for="wall-6">6</label>
+        <label for="wall-7">7</label>
+        <label for="wall-8">8</label>
+        <label for="wall-9">9</label>
+        <label for="wall-10">10</label>
+        <label for="wall-11">11</label>
+        <label for="wall-12">12</label> -->
+      </div>
+      <div class="paginations">
+        <label for="wall-1">1</label>
+        <label for="wall-2">2</label>
+        <label for="wall-3">3</label>
+        <label for="wall-4">4</label>
+        <!-- <label for="wall-5">5</label>
+        <label for="wall-6">6</label>
+        <label for="wall-7">7</label>
+        <label for="wall-8">8</label>
+        <label for="wall-9">9</label>
+        <label for="wall-10">10</label>
+        <label for="wall-11">11</label>
+        <label for="wall-12">12</label> -->
+      </div>
+      <label class="zoom" for="room-zoom">come over</label>
+      <label for="room-zoom" class="exit">exit</label>
+    </div>
+  </div>
+</div>
+  <!---- <footer class="side bottom display-block" style="position: static; box-sizing: border-box; ">
+       <div class="padding-1">
+        <small class="h6"><a class="link" href="https://formir.io">Formir</a> extentions &reg; 2020 </small>
+      </div>
+    </footer> --->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104149097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104149097-1');
+
+  //-------------------------------------------------------------------------------------------------------------//
+    </script>
+
+    <script src="./js/room.js"></script>
+
+
+  </body>
+</html>
