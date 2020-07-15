@@ -2,19 +2,22 @@
 <html>
 	<head>
 		<title>ArcheoCosmesis</title>
-		<link></link>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 		<style type="text/css">
 
 			body {
-				background: rgb(58, 58, 58);
-				color: white;
-				font-family: Helvetica, Arial;
+				font-family: 'Montserrat', sans-serif;
+				
+
 				margin: 0;
 				padding: 0;
 			}
 
+
+
+
 			header {
-				background-color: black;
+				background-color: ;
 				/*padding: 20px;*/
 			}
 
@@ -23,8 +26,8 @@
 				padding-top: 5px;
 				padding-bottom: 5px;
 				list-style-type: none;
-				color: black;
-				background:white;
+				
+				background:rgb(49,65,54);
 				position: sticky;
   				top: 0;
   				width: 100%;
@@ -33,19 +36,31 @@
 
 			}
 
-			ul{
-				text-align: right;
+			nav ul{
+			
+			text-align: right;
+			  
+			  
 			}
 
-			li{
+			nav li{
 				display: inline-block;
 				margin-right: 20px;
+				color: white;
 			
+			}
+
+			a:link{
+				color: black;
+			}
+
+			a:visited{
+				color: black;
+				text-decoration: none;
 			}
 
 			/*-----------------------------------------------SLIDESHOW------------------------------------------------*/
 			/* Slideshow container */
-			
 .slideshow-container {
   
   position: relative;
@@ -58,6 +73,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+
 }
 
 /* Next & previous buttons */
@@ -143,33 +159,35 @@
 
 			.container1 {
 				background-color: white;
+				color: black;
+				padding: 3%;
+				display: flex;
+				flex-direction: row; /*colum - uno sotto l'altro*/
+			}
+
+			.container2{
+				background-color: rgb(77,112,88);
 				color: grey;
 				padding: 10%;
 				display: flex;
 				flex-direction: row; /*colum - uno sotto l'altro*/
-				
-			}
-
-			.container2{
-				background-color: black;
-				color: grey;
-				padding: 10%;
-				display: flex;
-				/*flex-direction: row; colum - uno sotto l'altro*/
 
 			}
 
 			.container1-div{
-				background-color: rgb(58, 58, 58);
-				width: 100px;
+				
+
+				width: 300px;
+				height: 600px;
 				margin: auto;
-				width: 30%;
 			}
+
+			
 
 			.container3 {
 				background-color: white;
 				color: grey;
-				padding: 30%;
+				padding: %;
 				display: flex;
 				flex-direction: row; /*colum - uno sotto l'altro*/
 			}
@@ -187,7 +205,7 @@
 
 			.backDoor
 			{
-			  background-image: url('./img_home/museum_gif.gif');
+			  background-image: url(./img_home/museum_gif.gif);
 			  background-position: center;
 			  background-repeat: no-repeat;
 			  position:relative;
@@ -234,21 +252,27 @@
 
 			a:link {
 				text-decoration: none;
+				color: white;
 			}
 
 			a:visited {
+				color: white;
+			}
+
+			p{
 				color: black;
 			}
 
 
 
 			footer {
-				background-color: black;
-				padding-top: 5%;
-				color: white;
+				background-color: rgb(49,65,54);
+				padding: 3%;
 
 			}
-
+			
+	
+			
 			.img-workflow {
 				margin: auto;
 				width: 90%;
@@ -266,12 +290,13 @@
 
 	<body>
 			<nav>
+				
 				<ul>
-					<li style="float:left;"><a href="index.html"><i>ArcheoCosmesis</i></a></li>
-					<li><a href="index.html">HOME</a></li>
+
+					<li style="float: left;"><a href="index.html"><i> ArcheoCosmesis</i></a></li>
 					<li><a href="The_museum.html">Virtual Museum</a></li>
-					<li><a href="app.html">ArcheoCosmesis APP</a></li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="The_museum.html">ArcheoCosmesis APP</a></li>
+					<li><a href="The_museum.html">About</a></li>
 				</ul>
 
 			</nav>
@@ -322,18 +347,21 @@
 		<section class="container1">
 			<div class="container1-div">
 				<h2>PROJECT CONCEPT AND CONTENTS</h2>
-				<P>This museology project has as a main theme cosmetics and self care in ancient world, and how they represented a mirror of societies and their morals. Thus, our virtual exhibition and its correspondent interactive app has been developed as a cultural journey inside three of the most relevant populations of the ancient world: Egyptian, Roman and Greek.</P>
+				<h4>This museology project has as a main theme cosmetics and self care in ancient world, and how they represented a mirror of societies and their morals. Thus, our virtual exhibition and its correspondent interactive app has been developed as a cultural journey inside three of the most relevant populations of the ancient world: Egyptian, Roman and Greek.</h4>
 			</div>
 			<div class="container1-div">
 				<h2>DIGITAL ENVIRONMENTS</h2>
-				<P>ArcheoCosmesis concept and contents are represented and organized in two digital environments: the virtual museum and an interactive app. They share the same general theme, types of artifacts involved and represented and the cultures taken into account. However, they differ in aims, tools and content organization. They fulfil different purposes and are most useful in different contexts. While the main goal of the application is serving as a digital virtual guide while visiting a tangible museum, ArcheoCosmesis virtual museum is indeed projected as a consistent exhibition where plants and minerals, archeological objects and contextualising elements are mixed in such a way that they investigate different aspects of the ancient cosmetic culture on the basis of a strong pattern of interpretation.</P>
+				<h4>ArcheoCosmesis concept and contents are represented and organized in two digital environments: the virtual museum and an interactive app. They share the same general theme, types of artifacts involved and represented and the cultures taken into account. However, they differ in aims, tools and content organization. They fulfil different purposes and are most useful in different contexts. While the main goal of the application is serving as a digital virtual guide while visiting a tangible museum, ArcheoCosmesis virtual museum is indeed projected as a consistent exhibition where plants and minerals, archeological objects and contextualising elements are mixed in such a way that they investigate different aspects of the ancient cosmetic culture on the basis of a strong pattern of interpretation.</h4>
 			</div>
 			<div class="container1-div">
+				<div class="container1-div">
 				<h2>THE CHARACTERS</h2>
-				<p>Each society and its belonging artifacts of the ArcheoCosmesis collection is explained by a character belonging to it: Kha for Egypt, Kallisto for Greece and a mysterious woman for Rome. Those character are not casual, they have been selected among graphical representation of people (vases or statuettes). They are characterized through their words and their social appartenance. They describe the room from their personal perspective and the objects with objective explanations.</p>
+				<h4>Each society and its belonging artifacts of the ArcheoCosmesis collection is explained by a character belonging to it: Kha for Egypt, Kallisto for Greece and a mysterious woman for Rome. Those character are not casual, they have been selected among graphical representation of people (vases or statuettes). They are characterized through their words and their social appartenance. They describe the room from their personal perspective and the objects with objective explanations.</h4>
 			</div>
-		</section>
 
+			
+			
+		</section>
 		<section class="container2">
 			<h2>WORKFLOW DIAGRAM</h2>
 			<div class="img-workflow">
@@ -342,7 +370,7 @@
 		</section>
 
 		<section class="container3">
-			<div class="backDoor"><a href="The_museum.html" class="enter">Enter in the Virtual Museum</a><div class="door">
+			<div class="backDoor"><a href="The_museum.html" class="enter"><h4 style="color: black;">Enter in the Virtual Museum</h4></a><div class="door">
 			  </div>
 			</div>
 			  
@@ -351,10 +379,10 @@
 			
 		</section>
 		<footer id="footer">
-			<ul class="copyright">
-				<li>Created by Alessia Cioffi, Sara Coppini and Francesca Genovese for the final project of the course <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/424640">Museology, museography and virtual enviroment</a> within the master degree course <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> at the <a href="https://www.unibo.it/en/homepage">University of Bologna</a>.</li>
-				<li>The photographs of ArcheoCosmesis virtual museum belong to a number of national and international museums which kindly give permission to use them. Notably, we are much obliged to the <a href="https://www.britishmuseum.org/">British Museum</a>, <a href="https://museoegizio.it/">Museo Egizio of Turin</a>, and <a href="https://www.museireali.beniculturali.it/">Musei Reali of Turin</a>.</li>
-			</ul>
+			<div class="copyright">
+				<h4>Created by <i>Alessia Cioffi</i>, <i>Sara Coppini</i> and <i>Francesca Genovese</i> for the final project of the course <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/424640">Museology, museography and virtual enviroment</a> within the master degree course <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> at the <a href="https://www.unibo.it/en/homepage">University of Bologna</a>.</h4>
+				<h4>The photographs of ArcheoCosmesis virtual museum belong to a number of national and international museums which kindly give permission to use them. Notably, we are much obliged to the <a href="https://www.britishmuseum.org/">British Museum</a>, <a href="https://museoegizio.it/">Museo Egizio of Turin</a>, and <a href="https://www.museireali.beniculturali.it/">Musei Reali of Turin</a>.</h4>
+			</div>
 		</footer>
 
 		<script type="text/javascript">
